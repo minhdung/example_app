@@ -10,7 +10,7 @@ ExampleApp::Application.routes.draw do
   get "static_pages/about"
   get "static_pages/contact"
   get "session/new"
-   get "session/destroy"
+  get "session/destroy"
   match '/help',    to: 'static_pages#help'
   match '/about',   to: 'static_pages#about'
   match '/contact', to: 'static_pages#contact'

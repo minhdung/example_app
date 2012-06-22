@@ -67,9 +67,7 @@ describe "when email address is already taken" do
     it { should_not be_valid }
   end
 
-describe "with a password that's tit { should respond_to(:password_confirmation) }
-  it { should respond_to(:remember_token) }
-  it { should respond_to(:authenticate) }  oo short" do
+describe "with a password that's too short" do
     before { @user.password = @user.password_confirmation = "a" * 5 }
     it { should be_invalid }
   end
