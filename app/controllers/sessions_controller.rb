@@ -1,6 +1,7 @@
 class SessionsController < ApplicationController
 
   def new
+    flash[:success] = "Please sgin in!"
   end
 
  def create
