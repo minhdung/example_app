@@ -5,7 +5,8 @@ ExampleApp::Application.routes.draw do
   
   match '/signin',  to: 'sessions#new'
   match '/signout', to: 'sessions#destroy', via: :delete
-  
+
+
   get "static_pages/home"
   get "static_pages/help"
   get "static_pages/about"
@@ -18,6 +19,7 @@ ExampleApp::Application.routes.draw do
   match '/profile', to: 'users#show'
   get "users/show"
   get "users/new"
+  
   #match '/user', to: 'users#show'
 
  match '/signup',  to: 'users#new'
